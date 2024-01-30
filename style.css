@@ -219,8 +219,13 @@ footer {
   height: 30px;
 }
 @media (max-width: 600px) {
+  .tillcontact {
+    padding: 50px;
+  }
   /* Adjust styles for smaller screen sizes */
-
+  header > svg {
+    width: 200px;
+  }
   .servicios {
     grid-template-columns: 1fr; /* Single column layout for small screens */
   }
@@ -230,5 +235,17 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     /* text-align: center; */
+  }
+  .servicios .service:nth-child(1),
+  .service:nth-child(3) {
+    border-right: none;
+  }
+  .service {
+    padding: 40px;
+    border-bottom: 2px solid black;
+  }
+  .servicios,
+  .service:nth-child(4) {
+    border-bottom: none;
   }
 }
